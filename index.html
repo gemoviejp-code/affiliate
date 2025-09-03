@@ -13,8 +13,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            max-width: 1440px;
-            margin: 0 auto;
+            max-width: none; /* 最大幅の制限を解除して画像を大きく表示 */
+            width: 100%;
         }
         .grid-item {
             text-align: center;
@@ -23,8 +23,9 @@
             background-color: #f9f9f9;
         }
         .grid-item img {
-            max-width: 100%;
+            width: 100%; /* 幅を100%に設定してコンテナに合わせて拡大 */
             height: auto;
+            max-width: none; /* 最大幅の制限を解除 */
         }
     </style>
 </head>
