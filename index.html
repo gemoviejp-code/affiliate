@@ -1,26 +1,105 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>楽天アフィリエイト サンプル</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>楽天アフィリエイトランキング</title>
+ <style>
+ body {
+ font-family: 'Arial', sans-serif;
+ background-color: #f4f4f9;
+ margin: 0;
+ padding: 0;
+ color: #333;
+ }
+ .container {
+ max-width: 1000px;
+ margin: 0 auto;
+ padding: 20px;
+ }
+ h1 {
+ text-align: center;
+ font-size: 2.5em;
+ color: #2c3e50;
+ margin-bottom: 40px;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ }
+ .category {
+ margin-bottom: 40px;
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ transition: transform 0.3s ease;
+ }
+ .category:hover {
+ transform: translateY(-5px);
+ }
+ .category-title {
+ font-size: 1.8em;
+ color: #e91e63;
+ margin-bottom: 15px;
+ position: relative;
+ padding-bottom: 10px;
+ }
+ .category-title::after {
+ content: '';
+ position: absolute;
+ width: 50px;
+ height: 3px;
+ background-color: #e91e63;
+ bottom: 0;
+ left: 0;
+ }
+ .affiliate-widget {
+ text-align: center;
+ }
+ @media (max-width: 768px) {
+ .container {
+ padding: 15px;
+ }
+ h1 {
+ font-size: 2em;
+ }
+ .category-title {
+ font-size: 1.5em;
+ }
+ }
+ </style>
 </head>
 <body>
-  <!-- 楽天アフィリエイト ウィジェット -->
-  <script type="text/javascript">
-    rakuten_design = "slide";
-    rakuten_affiliateId = "4bee7433.fc9cdba3.4bee7434.f3fa9fc1";
-    rakuten_items = "ranking";
-    rakuten_genreId = "0";
-    rakuten_size = "728x200";
-    rakuten_target = "_blank";
-    rakuten_theme = "gray";
-    rakuten_border = "off";
-    rakuten_auto_mode = "on";
-    rakuten_genre_title = "off";
-    rakuten_recommend = "on";
-    rakuten_ts = "1756923241517";
-  </script>
-  <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
-</body>
-</html>
+ <div class="container">
+ <h1>楽天ショッピングランキング</h1>
+
+ <!-- デイリー総合ランキング -->
+ <div class="category">
+ <h2 class="category-title">デイリー総合ランキング</h2>
+ <div class="affiliate-widget">
+ <script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="4bee7433.fc9cdba3.4bee7434.f3fa9fc1";rakuten_items="ranking";rakuten_genreId="0";rakuten_size="728x200";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_ts="1756923650353";</script>
+ <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
+ </div>
+ </div>
+
+ <!-- 百貨店・総合通販・ギフト -->
+ <div class="category">
+ <h2 class="category-title">百貨店・総合通販・ギフト</h2>
+ <div class="affiliate-widget">
+ <script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="4bee7433.fc9cdba3.4bee7434.f3fa9fc1";rakuten_items="ranking";rakuten_genreId="100000";rakuten_size="728x200";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_ts="1756924258945";</script>
+ <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
+ </div>
+ </div>
+
+ <!-- レディースファッション -->
+ <div class="category">
+ <h2 class="category-title">レディースファッション</h2>
+ <div class="affiliate-widget">
+ <script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="4bee7433.fc9cdba3.4bee7434.f3fa9fc1";rakuten_items="ranking";rakuten_genreId="100371";rakuten_size="728x200";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_ts="1756923930314";</script>
+ <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
+ </div>
+ </div>
+
+ <!-- メンズファッション -->
+ <div class="category">
+ <h2 class="category-title">メンズファッション</h2>
+ <div 
