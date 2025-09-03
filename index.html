@@ -2,32 +2,33 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affiliate Links Grid</title>
+    <title>アフィリエイトグリッド</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            background-color: #f9f9f9;
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            width: 100%;
+            grid-template-columns: repeat(3, 1fr); /* 3列 */
+            grid-gap: 10px;
+            max-width: 960px;
         }
         .grid-item {
+            background-color: #fff;
+            padding: 5px;
             text-align: center;
-            border: 1px solid #ddd;
-            padding: 10px;
-            background-color: #f9f9f9;
-            overflow: hidden; /* 拡大した画像が枠をはみ出さないように */
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
-        .grid-item img {
-            width: 100%;
+        img {
+            max-width: 100%;
             height: auto;
-            transform: scale(1.2); /* 画像を1.5倍に拡大 */
-            transform-origin: center; /* 拡大の中心を画像の中央に設定 */
-            margin: 2px;
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -35,27 +36,44 @@
     <div class="grid-container">
         <!-- 左上 -->
         <div class="grid-item">
-            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec6a2b.a23c2d79.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMTMiLCJiYW4iOjEyNTE4MjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hsb/4bec6a2b.a23c2d79.4beb1c51.978b3bfd/?me_id=1&me_adv_id=1251820&t=pict" border="0" alt="" title=""></a>
+            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec6a2b.a23c2d79.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMTMiLCJiYW4iOjEyNTE4MjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener">
+                <img src="https://hbb.afl.rakuten.co.jp/hsb/4bec6a2b.a23c2d79.4beb1c51.978b3bfd/?me_id=1&me_adv_id=1251820&t=pict" alt="">
+            </a>
         </div>
+
         <!-- 中上 -->
         <div class="grid-item">
-            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec6b05.f51265fa.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMDMiLCJiYW4iOjSunday, March 31, 2024ImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hsb/4bec6b05.f51265fa.4beb1c51.978b3bfd/?me_id=1&me_adv_id=1564613&t=pict" border="0" alt="" title=""></a>
+            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec6b05.f51265fa.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMDMiLCJiYW4iOjE1NjQ2MTMsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener">
+                <img src="https://hbb.afl.rakuten.co.jp/hsb/4bec6b05.f51265fa.4beb1c51.978b3bfd/?me_id=1&me_adv_id=1564613&t=pict" alt="">
+            </a>
         </div>
+
         <!-- 右上 -->
         <div class="grid-item">
-            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec6bb7.c21e0ecf.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMTAiLCJiYW4iOjE2MzkzNjMsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hsb/4bec6bb7.c21e0ecf.4beb1c51.978b3bfd/?me_id=1&me_adv_id=1639363&t=pict" border="0" alt="" title=""></a>
+            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec6bb7.c21e0ecf.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMTAiLCJiYW4iOjE2MzkzNjMsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener">
+                <img src="https://hbb.afl.rakuten.co.jp/hsb/4bec6bb7.c21e0ecf.4beb1c51.978b3bfd/?me_id=1&me_adv_id=1639363&t=pict" alt="">
+            </a>
         </div>
+
         <!-- 左下 -->
         <div class="grid-item">
-            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec571d.224b047c.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI0NCIsImJhbiI6Mjc5NDg1OCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hsb/4bec571d.224b047c.4beb1c51.978b3bfd/?me_id=1&me_adv_id=2794858&t=pict" border="0" alt="" title=""></a>
+            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec571d.224b047c.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI0NCIsImJhbiI6Mjc5NDg1OCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener">
+                <img src="https://hbb.afl.rakuten.co.jp/hsb/4bec571d.224b047c.4beb1c51.978b3bfd/?me_id=1&me_adv_id=2794858&t=pict" alt="">
+            </a>
         </div>
+
         <!-- 中下 -->
         <div class="grid-item">
-            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec599d.a03c4a82.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI1OCIsImJhbiI6MzIzMDk1MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hsb/4bec599d.a03c4a82.4beb1c51.978b3bfd/?me_id=1&me_adv_id=3230950&t=pict" border="0" alt="" title=""></a>
+            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec599d.a03c4a82.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI1OCIsImJhbiI6MzIzMDk1MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener">
+                <img src="https://hbb.afl.rakuten.co.jp/hsb/4bec599d.a03c4a82.4beb1c51.978b3bfd/?me_id=1&me_adv_id=3230950&t=pict" alt="">
+            </a>
         </div>
+
         <!-- 右下 -->
         <div class="grid-item">
-            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec5a31.488bea38.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI5NSIsImJhbiI6MjA1MTk0MiwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hsb/4bec5a31.488bea38.4beb1c51.978b3bfd/?me_id=1&me_adv_id=2051942&t=pict" border="0" alt="" title=""></a>
+            <a href="https://hb.afl.rakuten.co.jp/hsc/4bec5a31.488bea38.4beb1c51.978b3bfd/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI5NSIsImJhbiI6MjA1MTk0MiwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener">
+                <img src="https://hbb.afl.rakuten.co.jp/hsb/4bec5a31.488bea38.4beb1c51.978b3bfd/?me_id=1&me_adv_id=2051942&t=pict" alt="">
+            </a>
         </div>
     </div>
 </body>
