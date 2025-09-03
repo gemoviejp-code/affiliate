@@ -15,7 +15,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3列 */
             grid-gap: 15px;
-            max-width: 960px;
+            max-width: 1000px;
         }
         .grid-item {
             background-color: #fff;
@@ -23,10 +23,11 @@
             text-align: center;
             box-shadow: 0 0 5px rgba(0,0,0,0.1);
             border-radius: 5px;
+            overflow: visible; /* 画像がはみ出しても表示 */
         }
         .grid-item img {
-            transform: scale(1.5);  /* 縦横1.5倍 */
-            transform-origin: top left; /* 左上基準で拡大 */
+            width: 150%;
+            height: 150%;
             display: block;
             margin: auto;
         }
