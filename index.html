@@ -14,8 +14,8 @@
         }
         .container {
             max-width: 1500px;
-            margin: 0 auto;
-            padding: 10px;   
+            margin: 0 auto; /* 水平中央揃え */
+            padding: 10px;
         }
         h1 {
             text-align: center;
@@ -36,6 +36,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 10px;
             transition: transform 0.3s ease;
+            order: 0; /* ランダム配置用 */
         }
         .category:hover {
             transform: translateY(-5px);
@@ -77,8 +78,9 @@
 </head>
 <body>
     <div class="container">
+        <h1>楽天ランキング</h1>
         <div class="grid">
-            <!-- デイリー総合ランキング (左列: 1) -->
+            <!-- デイリー総合ランキング -->
             <div class="category">
                 <h2 class="category-title">デイリー総合ランキング</h2>
                 <div class="affiliate-widget">
@@ -87,7 +89,7 @@
                 </div>
             </div>
 
-            <!-- 百貨店・総合通販・ギフト (右列: 2) -->
+            <!-- 百貨店・総合通販・ギフト -->
             <div class="category">
                 <h2 class="category-title">百貨店・総合通販・ギフト</h2>
                 <div class="affiliate-widget">
@@ -96,7 +98,7 @@
                 </div>
             </div>
 
-            <!-- レディースファッション (左列: 3) -->
+            <!-- レディースファッション -->
             <div class="category">
                 <h2 class="category-title">レディースファッション</h2>
                 <div class="affiliate-widget">
@@ -105,7 +107,7 @@
                 </div>
             </div>
 
-            <!-- メンズファッション (右列: 4) -->
+            <!-- メンズファッション -->
             <div class="category">
                 <h2 class="category-title">メンズファッション</h2>
                 <div class="affiliate-widget">
@@ -114,7 +116,7 @@
                 </div>
             </div>
 
-            <!-- インナー・下着・ナイトウエア (左列: 5) -->
+            <!-- インナー・下着・ナイトウエア -->
             <div class="category">
                 <h2 class="category-title">インナー・下着・ナイトウエア</h2>
                 <div class="affiliate-widget">
@@ -123,7 +125,7 @@
                 </div>
             </div>
 
-            <!-- バッグ・小物・ブランド雑貨 (右列: 6) -->
+            <!-- バッグ・小物・ブランド雑貨 -->
             <div class="category">
                 <h2 class="category-title">バッグ・小物・ブランド雑貨</h2>
                 <div class="affiliate-widget">
@@ -132,7 +134,7 @@
                 </div>
             </div>
 
-            <!-- 靴 (左列: 7) -->
+            <!-- 靴 -->
             <div class="category">
                 <h2 class="category-title">靴</h2>
                 <div class="affiliate-widget">
@@ -141,7 +143,7 @@
                 </div>
             </div>
 
-            <!-- 腕時計 (右列: 8) -->
+            <!-- 腕時計 -->
             <div class="category">
                 <h2 class="category-title">腕時計</h2>
                 <div class="affiliate-widget">
@@ -150,7 +152,7 @@
                 </div>
             </div>
 
-            <!-- ジュエリー・アクセサリー (左列: 9) -->
+            <!-- ジュエリー・アクセサリー -->
             <div class="category">
                 <h2 class="category-title">ジュエリー・アクセサリー</h2>
                 <div class="affiliate-widget">
@@ -159,7 +161,7 @@
                 </div>
             </div>
 
-            <!-- 美容・コスメ・香水 (右列: 10) -->
+            <!-- 美容・コスメ・香水 -->
             <div class="category">
                 <h2 class="category-title">美容・コスメ・香水</h2>
                 <div class="affiliate-widget">
@@ -168,7 +170,7 @@
                 </div>
             </div>
 
-            <!-- 医薬品・コンタクト・介護 (左列: 11) -->
+            <!-- 医薬品・コンタクト・介護 -->
             <div class="category">
                 <h2 class="category-title">医薬品・コンタクト・介護</h2>
                 <div class="affiliate-widget">
@@ -177,7 +179,7 @@
                 </div>
             </div>
 
-            <!-- ダイエット・健康 (右列: 12) -->
+            <!-- ダイエット・健康 -->
             <div class="category">
                 <h2 class="category-title">ダイエット・健康</h2>
                 <div class="affiliate-widget">
@@ -186,7 +188,7 @@
                 </div>
             </div>
 
-            <!-- 家電 (左列: 13) -->
+            <!-- 家電 -->
             <div class="category">
                 <h2 class="category-title">家電</h2>
                 <div class="affiliate-widget">
@@ -195,7 +197,7 @@
                 </div>
             </div>
 
-            <!-- スマートフォン・タブレット (右列: 14) -->
+            <!-- スマートフォン・タブレット -->
             <div class="category">
                 <h2 class="category-title">スマートフォン・タブレット</h2>
                 <div class="affiliate-widget">
@@ -204,7 +206,7 @@
                 </div>
             </div>
 
-            <!-- TV・オーディオ・カメラ (左列: 15) -->
+            <!-- TV・オーディオ・カメラ -->
             <div class="category">
                 <h2 class="category-title">TV・オーディオ・カメラ</h2>
                 <div class="affiliate-widget">
@@ -213,7 +215,7 @@
                 </div>
             </div>
 
-            <!-- パソコン・周辺機器 (右列: 16) -->
+            <!-- パソコン・周辺機器 -->
             <div class="category">
                 <h2 class="category-title">パソコン・周辺機器</h2>
                 <div class="affiliate-widget">
@@ -222,16 +224,16 @@
                 </div>
             </div>
 
-            <!-- デジタルコンテンツ (左列: 17) -->
+            <!-- デジタルコンテンツ -->
             <div class="category">
                 <h2 class="category-title">デジタルコンテンツ</h2>
                 <div class="affiliate-widget">
-                    <script type="text/javascript">rak spoolten_design="slide";rakuten_affiliateId="4bee7433.fc9cdba3.4bee7434.f3fa9fc1";rakuten_items="ranking";rakuten_genreId="402853";rakuten_size="728x200";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_ts="1756924293353";</script>
+                    <script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="4bee7433.fc9cdba3.4bee7434.f3fa9fc1";rakuten_items="ranking";rakuten_genreId="402853";rakuten_size="728x200";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_ts="1756924293353";</script>
                     <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
                 </div>
             </div>
 
-            <!-- インテリア・寝具・収納 (右列: 18) -->
+            <!-- インテリア・寝具・収納 -->
             <div class="category">
                 <h2 class="category-title">インテリア・寝具・収納</h2>
                 <div class="affiliate-widget">
@@ -240,7 +242,7 @@
                 </div>
             </div>
 
-            <!-- キッチン用品・食器・調理器具 (左列: 19) -->
+            <!-- キッチン用品・食器・調理器具 -->
             <div class="category">
                 <h2 class="category-title">キッチン用品・食器・調理器具</h2>
                 <div class="affiliate-widget">
@@ -249,7 +251,7 @@
                 </div>
             </div>
 
-            <!-- 日用品雑貨・文房具・手芸 (右列: 20) -->
+            <!-- 日用品雑貨・文房具・手芸 -->
             <div class="category">
                 <h2 class="category-title">日用品雑貨・文房具・手芸</h2>
                 <div class="affiliate-widget">
@@ -258,7 +260,7 @@
                 </div>
             </div>
 
-            <!-- 花・ガーデン・DIY (左列: 21) -->
+            <!-- 花・ガーデン・DIY -->
             <div class="category">
                 <h2 class="category-title">花・ガーデン・DIY</h2>
                 <div class="affiliate-widget">
@@ -267,7 +269,7 @@
                 </div>
             </div>
 
-            <!-- 食品 (右列: 22) -->
+            <!-- 食品 -->
             <div class="category">
                 <h2 class="category-title">食品</h2>
                 <div class="affiliate-widget">
@@ -276,7 +278,7 @@
                 </div>
             </div>
 
-            <!-- スイーツ・お菓子 (左列: 23) -->
+            <!-- スイーツ・お菓子 -->
             <div class="category">
                 <h2 class="category-title">スイーツ・お菓子</h2>
                 <div class="affiliate-widget">
@@ -285,7 +287,7 @@
                 </div>
             </div>
 
-            <!-- 水・ソフトドリンク (右列: 24) -->
+            <!-- 水・ソフトドリンク -->
             <div class="category">
                 <h2 class="category-title">水・ソフトドリンク</h2>
                 <div class="affiliate-widget">
@@ -294,7 +296,7 @@
                 </div>
             </div>
 
-            <!-- 日本酒・焼酎 (左列: 25) -->
+            <!-- 日本酒・焼酎 -->
             <div class="category">
                 <h2 class="category-title">日本酒・焼酎</h2>
                 <div class="affiliate-widget">
@@ -303,7 +305,7 @@
                 </div>
             </div>
 
-            <!-- ビール・洋酒 (右列: 26) -->
+            <!-- ビール・洋酒 -->
             <div class="category">
                 <h2 class="category-title">ビール・洋酒</h2>
                 <div class="affiliate-widget">
@@ -312,7 +314,7 @@
                 </div>
             </div>
 
-            <!-- ペット・ペットグッズ (左列: 27) -->
+            <!-- ペット・ペットグッズ -->
             <div class="category">
                 <h2 class="category-title">ペット・ペットグッズ</h2>
                 <div class="affiliate-widget">
@@ -321,7 +323,7 @@
                 </div>
             </div>
 
-            <!-- キッズ・ベビー・マタニティ (右列: 28) -->
+            <!-- キッズ・ベビー・マタニティ -->
             <div class="category">
                 <h2 class="category-title">キッズ・ベビー・マタニティ</h2>
                 <div class="affiliate-widget">
@@ -330,7 +332,7 @@
                 </div>
             </div>
 
-            <!-- おもちゃ・ゲーム (左列: 29) -->
+            <!-- おもちゃ・ゲーム -->
             <div class="category">
                 <h2 class="category-title">おもちゃ・ゲーム</h2>
                 <div class="affiliate-widget">
@@ -339,7 +341,7 @@
                 </div>
             </div>
 
-            <!-- ホビー (右列: 30) -->
+            <!-- ホビー -->
             <div class="category">
                 <h2 class="category-title">ホビー</h2>
                 <div class="affiliate-widget">
@@ -348,7 +350,7 @@
                 </div>
             </div>
 
-            <!-- スポーツ・アウトドア (左列: 31) -->
+            <!-- スポーツ・アウトドア -->
             <div class="category">
                 <h2 class="category-title">スポーツ・アウトドア</h2>
                 <div class="affiliate-widget">
@@ -357,7 +359,7 @@
                 </div>
             </div>
 
-            <!-- 車・バイク (右列: 32) -->
+            <!-- 車・バイク -->
             <div class="category">
                 <h2 class="category-title">車・バイク</h2>
                 <div class="affiliate-widget">
@@ -366,7 +368,7 @@
                 </div>
             </div>
 
-            <!-- 車用品・バイク用品 (左列: 33) -->
+            <!-- 車用品・バイク用品 -->
             <div class="category">
                 <h2 class="category-title">車用品・バイク用品</h2>
                 <div class="affiliate-widget">
@@ -375,7 +377,7 @@
                 </div>
             </div>
 
-            <!-- 旅行・出張・チケット (右列: 34) -->
+            <!-- 旅行・出張・チケット -->
             <div class="category">
                 <h2 class="category-title">旅行・出張・チケット</h2>
                 <div class="affiliate-widget">
@@ -384,7 +386,7 @@
                 </div>
             </div>
 
-            <!-- 学び・サービス・保険 (左列: 35) -->
+            <!-- 学び・サービス・保険 -->
             <div class="category">
                 <h2 class="category-title">学び・サービス・保険</h2>
                 <div class="affiliate-widget">
@@ -393,7 +395,7 @@
                 </div>
             </div>
 
-            <!-- 光通信・モバイル通信 (右列: 36) -->
+            <!-- 光通信・モバイル通信 -->
             <div class="category">
                 <h2 class="category-title">光通信・モバイル通信</h2>
                 <div class="affiliate-widget">
@@ -402,7 +404,7 @@
                 </div>
             </div>
 
-            <!-- 本・雑誌・コミック (左列: 37) -->
+            <!-- 本・雑誌・コミック -->
             <div class="category">
                 <h2 class="category-title">本・雑誌・コミック</h2>
                 <div class="affiliate-widget">
@@ -411,7 +413,7 @@
                 </div>
             </div>
 
-            <!-- CD・DVD・楽器 (右列: 38) -->
+            <!-- CD・DVD・楽器 -->
             <div class="category">
                 <h2 class="category-title">CD・DVD・楽器</h2>
                 <div class="affiliate-widget">
@@ -421,5 +423,23 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.querySelector('.grid');
+            const categories = Array.from(grid.querySelectorAll('.category'));
+            
+            // Fisher-Yatesシャッフルアルゴリズムでランダムに並べ替え
+            for (let i = categories.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [categories[i], categories[j]] = [categories[j], categories[i]];
+            }
+            
+            // ランダムに並べ替えた要素をgridに再配置
+            categories.forEach((category, index) => {
+                category.style.order = index;
+                grid.appendChild(category);
+            });
+        });
+    </script>
 </body>
 </html>
